@@ -36,11 +36,11 @@ var map = L.map('map',{
 
 
 
-L.tileLayer('https://tile.openstreetmap.bzh/br/{z}/{x}/{y}.png', {
-    style:TileLayerStyle,
-    opacity:0.5,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+// L.tileLayer('https://tile.openstreetmap.bzh/br/{z}/{x}/{y}.png', {
+//     style:TileLayerStyle,
+//     opacity:0.5,
+//     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+// }).addTo(map);
 
 
 // Adding the Rio Ocean Base
