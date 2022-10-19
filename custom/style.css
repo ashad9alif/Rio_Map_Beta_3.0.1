@@ -11,6 +11,10 @@
     margin: center;
  }
 
+ #map {
+    background-image: url(../images/background_sea.png);
+ }
+
 
  /* .leaflet-tooltip {
 
