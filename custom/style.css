@@ -12,7 +12,10 @@
  }
 
  #map {
+    background: linear-gradient(black,#074f1a);
     background-image: url(../images/background_sea.png);
+    image-rendering: optimizeSpeed;
+
  }
 
 
