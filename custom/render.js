@@ -30,12 +30,13 @@ function onEachZone(feature, layer){
 
     });
 
-    layer.bindTooltip(feature.properties.NAME, {permanent: true,
-         className: "label-tooltip",
-          offset: [0, 0],
-          sticky:false,
-          opacity:1,
-          direction:'center',
+    layer.bindTooltip(feature.properties.NAME, {
+        permanent: false,
+        className: "label-tooltip",
+        offset: [0, 0],
+        sticky:false,
+        opacity:1,
+        direction:'center',
          });
 
     }
