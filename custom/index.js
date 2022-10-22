@@ -25,7 +25,7 @@
 var map = L.map('map',{
     center:[-22.9645, -43.231],
     zoom: 13,
-    scrollWheelZoom: false,
+    scrollWheelZoom: true,
     touchZoom: false,
     doubleClickZoom: false,
     zoomControl: false,
@@ -37,9 +37,26 @@ var map = L.map('map',{
 
 
 // L.tileLayer('https://tile.openstreetmap.bzh/br/{z}/{x}/{y}.png', {
-//     opacity:0.5,
-//     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+//     // opacity:0.5,
+//     // attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 // }).addTo(map);
+
+
+// L.tileLayer('https://server.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer'
+// ).addTo(map);
+
+
+const apiKey = "AAPKc86e10a8ff874b94af5eb323a6b2a1a3_9RbjH-k6Y1LnCUB63Nz4PXldf_ANVXwFvSLcbC4fjfr2oIUhsA2MUhT2Fnrhv2J";
+
+L.esri
+.tiledMapLayer({
+  // url: "https://tiles.arcgis.com/tiles/nGt4QxSblgDfeJn9/arcgis/rest/services/New_York_Housing_Density/MapServer",
+  url:"https://tiles.arcgis.com/tiles/Oc3X6QMh6DDjqWcH/arcgis/rest/services/background_WebM_102100__AGOL/MapServer",
+  pane: "overlayPane",
+  opacity:0.75,
+})
+.addTo(map);
+
 
 
 // Adding the Rio Ocean Base **

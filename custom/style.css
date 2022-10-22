@@ -21,7 +21,7 @@ html, body, #map {
 
 
 #map {
-    width: 100%;
+    width: 1590px;
     height: 690px;
     /* background-image: url(../images/background_3.png); */
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@ html, body, #map {
 
  #map{
     /* background: linear-gradient(black,#074f1a); */
-    /* background-image: url(../images/background_sea.png); */
+    /* background-image: url(../images/Final/LayoutTIF.png); */
     image-rendering: optimizeSpeed;
 
  }
