@@ -22,15 +22,15 @@
 
 
 
-var map = L.map('map',{
-    center:[-22.9645, -43.231],
-    zoom: 13,
-    scrollWheelZoom: false,
-    touchZoom: false,
-    doubleClickZoom: false,
-    zoomControl: false,
-    dragging: false,
-    attributionControl:false,
+var map = L.map('map', {
+  center: [-22.9645, -43.231],
+  zoom: 13,
+  scrollWheelZoom: false,
+  touchZoom: false,
+  doubleClickZoom: false,
+  zoomControl: false,
+  dragging: false,
+  attributionControl: false,
 });
 
 
@@ -46,17 +46,28 @@ var map = L.map('map',{
 // ).addTo(map);
 
 
-const apiKey = "AAPKc86e10a8ff874b94af5eb323a6b2a1a3_9RbjH-k6Y1LnCUB63Nz4PXldf_ANVXwFvSLcbC4fjfr2oIUhsA2MUhT2Fnrhv2J";
+// const apiKey = "AAPKc86e10a8ff874b94af5eb323a6b2a1a3_9RbjH-k6Y1LnCUB63Nz4PXldf_ANVXwFvSLcbC4fjfr2oIUhsA2MUhT2Fnrhv2J";
 
-L.esri
-.tiledMapLayer({
-  // url: "https://tiles.arcgis.com/tiles/nGt4QxSblgDfeJn9/arcgis/rest/services/New_York_Housing_Density/MapServer",
-  url:"https://tiles.arcgis.com/tiles/Oc3X6QMh6DDjqWcH/arcgis/rest/services/background_WebM_102100__AGOL/MapServer",
-  pane: "overlayPane",
-  opacity:0.75,
-})
-.addTo(map);
+// L.esri
+//   .tiledMapLayer({
+//     // url: "https://tiles.arcgis.com/tiles/nGt4QxSblgDfeJn9/arcgis/rest/services/New_York_Housing_Density/MapServer",
+//     url: "https://tiles.arcgis.com/tiles/Oc3X6QMh6DDjqWcH/arcgis/rest/services/background_WebM_102100__AGOL/MapServer",
+//     pane: "overlayPane",
+//     opacity: 0.75,
+//   })
+//   .addTo(map);
 
+
+
+
+
+
+
+
+  var imageUrl = 'https://live.staticflickr.com/65535/52446571012_c0858579b9_h.jpg',
+  imageBounds = [[-22.926251, -43.336038], [-23.013543, -43.126559]];
+
+L.imageOverlay(imageUrl, imageBounds).addTo(map);
 
 
 // Adding the Rio Ocean Base **
@@ -68,10 +79,10 @@ L.esri
 
 
 // Adding the Rio Zones Data on the Map
-var RioLayer = L.geoJson(RioData,{
-    style:RioStyle,
-    onEachFeature: onEachZone,
-    // zoomToFeature:zoomToFeature,
+var RioLayer = L.geoJson(RioData, {
+  style: RioStyle,
+  onEachFeature: onEachZone,
+  // zoomToFeature:zoomToFeature,
 
 }).addTo(map);
 
