@@ -18,6 +18,17 @@ html, body, #map {
 }
  */
 
+ * 
+    .responsive.map {
+        padding: 0 6px;
+        float: left;
+        width: 50.99999%;
+
+ }
+
+
+
+
 
 
 #map {
