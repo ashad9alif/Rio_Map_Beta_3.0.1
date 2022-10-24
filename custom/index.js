@@ -36,10 +36,10 @@ var map = L.map('map', {
 
 
 
-L.tileLayer('https://tile.openstreetmap.bzh/br/{z}/{x}/{y}.png', {
-    // opacity:0.5,
-    // attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+// L.tileLayer('https://tile.openstreetmap.bzh/br/{z}/{x}/{y}.png', {
+//   opacity: 0.5,
+//   // attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+// }).addTo(map);
 
 
 // L.tileLayer('https://server.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer'
@@ -64,12 +64,15 @@ L.tileLayer('https://tile.openstreetmap.bzh/br/{z}/{x}/{y}.png', {
 
 
 
-//   var imageUrl = 'https://live.staticflickr.com/65535/52448405340_ba0efc80e3_h.jpg',
-//   imageBounds = [[-22.9079095, -43.3355202], [-23.0191712, -43.1262947]];
+var imageUrl = 'https://live.staticflickr.com/65535/52450664014_cb5e524b3c_h.jpg',
+  imageBounds = [[-22.8580100, -43.4795681], [-23.0689946, -42.9822988]];
 
-//   // 43.3355202°W 22.9079095°S 
-// // 43.1262947°W 23.0191712°S 
-// L.imageOverlay(imageUrl, imageBounds).addTo(map);
+// 43.4795681°W 22.8580100°S   ** Left Top
+// 42.9822988°W 23.0689946°S ** Right Down 
+L.imageOverlay(imageUrl, imageBounds, {
+  opacity: 1,
+})
+  .addTo(map);
 
 
 // Adding the Rio Ocean Base **
