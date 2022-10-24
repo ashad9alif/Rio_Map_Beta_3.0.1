@@ -64,7 +64,7 @@ var map = L.map('map', {
 
 
 
-var imageUrl = 'https://live.staticflickr.com/65535/52450664014_cb5e524b3c_h.jpg',
+var imageUrl = 'https://live.staticflickr.com/65535/52450728339_907d457807_h.jpg',
   imageBounds = [[-22.8580100, -43.4795681], [-23.0689946, -42.9822988]];
 
 // 43.4795681°W 22.8580100°S   ** Left Top
